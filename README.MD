@@ -266,7 +266,7 @@ This is a learning project and contributions are welcome! Areas where help is ne
 
 ## 👤 Author
 
-**Your Name**
+**Mansouri Mohamed Fadhel**
 - GitHub: [@vhagar2001](https://github.com/vhagar2001/scholarai)
 - LinkedIn: [Mansouri Mohamed Fadhel](https://www.linkedin.com/in/mohamed-fadhel-mansouri/)
 - Email: mohamedfadhelmansouri01@gmail.com
