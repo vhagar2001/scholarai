@@ -1,6 +1,6 @@
 # 📚 ScholarAI - AI-Powered Research Companion
 
-> An intelligent research assistant that helps you discover, organize, and understand academic papers using state-of-the-art retrieval-augmented generation (RAG).
+> An experimental AI research assistant prototype designed to explore retrieval-augmented generation (RAG) techniques for academic paper discovery and analysis .
 
 ![Python](https://img.shields.io/badge/python-3.10+-blue.svg)
 ![License](https://img.shields.io/badge/license-MIT-green.svg)
@@ -15,7 +15,7 @@ Researchers spend countless hours reading papers, extracting key information, an
 - Lack domain-specific understanding of scientific content
 - Generate hallucinated or inaccurate information
 
-**ScholarAI** addresses this by providing a **free, local, and accurate** research assistant powered by models specifically trained on scientific literature.
+ScholarAI explores a free, local-first approach to building a research assistant powered by models trained on scientific literature.
 
 ---
 
@@ -36,7 +36,7 @@ Researchers spend countless hours reading papers, extracting key information, an
 ### 🔬 Research-Grade Technology
 - **SPECTER2 Embeddings** - Trained on 100M+ scientific papers by AllenAI
 - **BGE Reranking** - State-of-the-art reranking for maximum relevance
-- **Extractive Approach** - No text generation = No hallucinations
+- **Extractive Approach** - Designed to reduce hallucinations by avoiding text generation
 - **100% Free & Local** - All models run on your computer
 
 ---
@@ -174,7 +174,7 @@ SPECTER2 (Scientific Paper Embeddings) was specifically trained on scientific pa
 | **Generative** (FLAN-T5, GPT) | Medium | High risk | Slow |
 | **Extractive** (Our approach) | High | Zero | Fast |
 
-**Our Choice:** Extractive approach extracts actual sentences from papers rather than generating new text. Result: 100% grounded answers.
+**Our Choice:** Extractive approach extracts actual sentences from papers rather than generating new text. Goal: Provide fully grounded answers extracted directly from source papers.
 
 ### Two-Stage Retrieval
 
@@ -189,44 +189,8 @@ SPECTER2 (Scientific Paper Embeddings) was specifically trained on scientific pa
 
 **Result:** Much better answer quality than single-stage retrieval.
 
----
 
-## 📊 Performance
 
-### Benchmarks (Tested on i5 CPU, 16GB RAM)
-
-| Operation | Time | Notes |
-|-----------|------|-------|
-| Search papers | 2-3s | ArXiv API call |
-| Index paper | 15-30s | Embedding generation |
-| Answer question | 5-10s | With reranking |
-| Generate summary | 5-8s | Extractive method |
-
-### Model Sizes
-
-- **SPECTER2**: ~400MB
-- **BGE Reranker**: ~100MB
-- **ChromaDB**: Variable (depends on papers)
-- **Total**: ~500MB + your papers
-
----
-
-## 🎓 Use Cases
-
-### For Students
-- Organize papers for thesis research
-- Quickly understand complex papers
-- Find relevant literature efficiently
-
-### For Researchers
-- Stay updated with latest research
-- Compare methodologies across papers
-- Identify research gaps
-
-### For Learning
-- Understand RAG architecture
-- Practice with real-world NLP
-- Study SOTA retrieval systems
 
 ---
 
@@ -294,52 +258,18 @@ This is a learning project and contributions are welcome! Areas where help is ne
 - **Documentation** - More examples, tutorials
 - **New features** - See roadmap above
 
----
 
-## 📝 Project Background
-
-This project was developed as part of my preparation for applying to AI/ML master's programs in France. Goals:
-
-1. **Learn RAG architecture** - Understand modern retrieval systems
-2. **Practice with SOTA models** - Hands-on with SPECTER2, BGE
-3. **Solve a real problem** - Build a tool I actually use
-4. **Demonstrate skills** - Show technical depth for applications
-
-### Key Learnings
-
-- **Model selection matters** - Generic models failed, domain-specific succeeded
-- **Hallucination is real** - Generative approaches unreliable for factual QA
-- **Two-stage retrieval works** - Reranking dramatically improves quality
-- **Engineering challenges** - Windows compatibility, dependency conflicts
 
 ---
 
-## 📚 References & Inspiration
 
-### Papers
-- [SPECTER2](https://arxiv.org/abs/2004.07180) - Scientific Paper Embeddings
-- [BGE Reranker](https://arxiv.org/abs/2309.07597) - BAAI General Embedding
-- [Retrieval-Augmented Generation](https://arxiv.org/abs/2005.11401) - RAG Paper
-
-### Tools & Libraries
-- [Semantic Scholar](https://www.semanticscholar.org/) - Inspiration for architecture
-- [LlamaIndex](https://www.llamaindex.ai/) - RAG framework patterns
-- [ChromaDB](https://www.trychroma.com/) - Vector database
-
----
-
-## 📄 License
-
-MIT License - See [LICENSE](LICENSE) file for details.
-
----
 
 ## 👤 Author
 
 **Your Name**
-- GitHub: [@yourusername](https://github.com/yourusername)
-- LinkedIn: [Your Name](https://linkedin.com/in/yourprofile)
-- Email: your.email@example.com
+- GitHub: [@vhagar2001](https://github.com/vhagar2001/scholarai)
+- LinkedIn: [Mansouri Mohamed Fadhel](https://www.linkedin.com/in/mohamed-fadhel-mansouri/)
+- Email: mohamedfadhelmansouri01@gmail.com
 
 ---
 
@@ -351,6 +281,19 @@ MIT License - See [LICENSE](LICENSE) file for details.
 - **Open-source community** - For the amazing tools that made this possible
 
 ---
+## 🧪 Development Stage
+
+ScholarAI is currently:
+
+- 🧠 A personal research experiment in applied NLP and RAG systems
+- 🏗️ Under active architectural iteration
+- 🔍 Being evaluated for retrieval quality and system performance
+- 🧪 Not production-ready
+
+The focus at this stage is learning, experimentation, and architectural validation rather than production deployment.
+---
+
+
 
 ## ⭐ Star History
 
@@ -360,4 +303,4 @@ If you find this project useful, please consider giving it a star! It helps othe
 
 **Built with ❤️ for researchers, by a researcher**
 
-*Last updated: January 2026*
+*Last updated: February 2026*
